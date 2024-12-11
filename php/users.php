@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список организаций</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href=".../styles/style2.css">
 </head>
 <body>
     <div class="container">
         <p style="text-align: center; font-weight: 600; font-size:30px;">Список записей</p>
         <div class="d1">
             <p style="font-weight: 600; font-size:27px;">Пользователи</p> 
-            <a href="index.php" class="back-button">Назад</a>    
+            <a href="../index.html" class="back-button">Назад</a>    
         </div>
         
         <div class="table-wrap">
