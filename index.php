@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta property="og:site_name" content="СОДЕЙСТВИЕ ЗАНЯТОСТИ">
+    <meta property="og:title" content="Федеральный проект">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:description" content="Просим вас пройти предварительную регистрацию для участия в проекте
+    реализуемом Институтом профессионального образования (ИРПО)">
+    <meta property="og:image" content="https://firpo.ru/netcat_files/uploads/2022/04/%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D1%8B-09.png">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+</head>
+<body>
+    <div class="upper">
+      <div></div>
+      <div class="text">
+        <p>ФЕДЕРАЛЬНЫЙ ПРОЕКТ</p>
+        <p style="font-size: 20px; font-weight: 600;">&laquo;СОДЕЙСТВИЕ ЗАНЯТОСТИ&raquo;</p>
+      </div>
+      <div class="img"><a href="users.php"><img src="profile.png" alt=""></a></div>
+    </div>
+    <div class="inner">
+        <p style="font-size: 20px; padding: 20px 0 10px;">Уважаемые партнеры!</p>
+        <p>Просим вас пройти предварительную регистрацию для участия в проекте, <br>
+        реализуемом Институтом профессионального образования (ИРПО) в <br>
+        качестве федерального оператора федерального проекта &laquo;Содействие <br>
+        занятости&raquo; национального проекта &laquo;Демография&raquo;.
+        </p>
+    </div>
+    <div class="inform">
+      <form action="register.php" method="post">
+        <div class="inp2">
+          <label for="full_name">Наименование организации</label><br>
+          <input id="full_name" name="full_name" type="text" required><br>
+
+          <label for="short_name">Наименование организации (сокращенное, в соответствии с<br>
+          Уставом) </label><br>
+          <input id="short_name" name="short_name" type="text" required><br>
+        </div>
+        
+         
+          <p style="margin-top: 20px;">Тип участника</p>
+          <p style="font-size: 12px; margin-bottom: 30px;">согласно классификации п. 2 проекта Порядка предварительного квалификационного отбора (ПКО) <br>
+          организаций, осуществляющих образовательную деятельность в субъектах Российской Федерации <br>
+          в рамках Проекта &laquo;Содействие занятости&raquo;&#33;
+          </p>
+          <select name="organization_type" id="organization_type" required>
+            <option value="CO">ЦО - центр обучения</option>
+            <option value="RO">РО - региональный оператор</option>
+            <option value="ROCO">РО - центр обучения</option>
+            <option value="FOC">ФОЦ - федеральный образовательный центр</option>
+          </select>
+          <br>
+          <label for="director_position">Должность руководителя организации</label><br>
+          <input id="director_position" type="text" name="director_position" responsible_name><br>
+          
+  
+          <label for="director_name">ФИО руководителя</label><br>
+          <input id="director_name" type="text" name="director_name" responsible_name><br>
+          
+
+          <label for="responsible_position">Должность ответственного лица</label><br>
+          <input id="responsible_position" type="text" name="responsible_position" required><br>
+  
+          <label for="responsible_name">ФИО ответственного лица</label><br>
+          <input id="responsible_name" type="text" name="responsible_name" required><br>
+          
+          <label for="phone">Телефон</label><br>
+          <input id="phone" type="phone" name="phone" required><br>
+          
+  
+          <label for="email">E-mail</label><br>
+          <input id="email" type="email" name="email" required>
+          
+      <div class="button">
+        <button type="submit">Отправить</button>
+      </div>
+
+      </form>
+      
+      
+    </div>
+    
+</body>
+</html>
